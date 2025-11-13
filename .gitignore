@@ -1,0 +1,24 @@
+# Python cache folders
+__pycache__/
+tracker/__pycache__/
+team_assigner/__pycache__/
+utils/__pycache__/
+
+# macOS junk file
+.DS_Store
+
+# Large data and model files
+models/
+stubs/
+input_videos/
+
+# Output folders
+output_videos/
+runs/
+
+# Training & analysis folders (Don't need to be in the repo)
+Training/
+development_and_analysis/
+
+# VS Code settings
+.vscode/
