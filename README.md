@@ -19,11 +19,13 @@ Witness the transformation from raw footage to actionable analytics.
 
 ### 1. Raw Input Footage
 *Original broadcast video used for inference.*
-https://github.com/user-attachments/assets/6afc757d-084b-4084-a1b4-d8c29c5b0578
+
+https://github.com/user-attachments/assets/c13d529e-6fd7-45f5-a305-d5034d39e424
 
 ### 2. AI-Processed Output
 *Real-time analysis featuring player tracking, team assignment, and possession stats.*
-https://github.com/user-attachments/assets/17b20309-1ad4-4704-8980-c5cf189a14b2
+
+https://github.com/user-attachments/assets/388a236e-f0c5-4f43-b970-582174178a0a
 
 ---
 
@@ -44,6 +46,16 @@ This repository is architected with modularity in mind, separating detection, as
 -   **Interpolation Engine:** Handles critical edge cases where the ball is occluded by players. It mathematically interpolates the ball's missing coordinates to maintain a smooth, unbroken trajectory.
 
 ---
-
 ## 📂 Project Structure
 
+```text
+FootBall-Analytics-MVP/
+├── player_ball_assigner/   # Logic for ball possession & interpolation
+├── team_assigner/          # K-Means clustering for team separation
+├── tracker/                # YOLO11 tracking implementation
+├── utils/                  # Helper functions for video I/O
+├── main.py                 # Main execution script
+├── proj.py                 # Development & testing script
+├── yolo11l.pt              # YOLO11 Large model weights
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
